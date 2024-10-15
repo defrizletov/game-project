@@ -1,0 +1,234 @@
+#menu {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    left: calc(50% - 175px);
+    top: calc(50% - 150px);
+    background: url('../img/menuBackground.jpg') center/100px;
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 5px 2.5px white;
+    border-radius: 5px;
+}
+
+#menu span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background: url('../img/menuButton.jpg') center/100px;
+    background-repeat: repeat;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px #000000;
+    box-shadow: #005eff 0 0 5px;
+    width: 150px;
+    font-family: 'Jost', serif;
+    padding: 10px;
+    margin: 10px;
+    transform: translateZ(65px);
+    border-radius: 5px;
+}
+
+#menu span:hover {
+    color: rgb(197, 237, 253);
+}
+
+.logo_text {
+    position: absolute;
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Jost', serif;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px #005eff;
+    text-shadow: #005eff 0 0 15px;
+    text-align: center;
+    top: 10%;
+    z-index: 2;
+}
+
+.logo_img {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 15%;
+    width: 125px;
+    height: 125px;
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2.5px solid #005eff;
+    width: 550px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(207, 231, 255);
+    z-index: 3;
+}
+
+.close_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    display: block;
+    z-index: 5;
+}
+
+.close_button img {
+    position: absolute;
+    right: 0;
+}
+
+.background {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: black;
+    margin: 2.5px;
+}
+
+.close_button:hover .background {
+    display: block;
+}
+
+.info span {
+    font-size: 25px;
+    font-family: 'Jost', serif;
+    text-shadow: #005eff 0 0 15px;
+}
+
+.info p {
+    font-size: 25px;
+    font-family: 'PTSansCaption', serif;
+}
+
+.authors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.author img {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.author span {
+    font-family: 'Unbounded', serif;
+    font-size: 25px;
+}
+
+.saves {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.save {
+    background-color: #002c65;
+    position: relative;
+    width: 225px;
+    height: 125px;
+    margin: 7.5px;
+}
+
+.save:hover, .selected {
+    box-shadow: 0 0 5px 2.5px #005eff;
+}
+
+.saves p {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 45px;
+    font-family: 'Jost', serif;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px #005eff;
+    text-shadow: #005eff 0 0 5px;
+}
+
+.save span {
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+    font-family: 'Jost', serif;
+    color: white;
+    position: absolute;
+    left: 0;
+}
+
+.save img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+    bottom: 10px;
+}
+
+.buttons span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    background: #ccc url('../img/menuButton.jpg') center/100px;
+    background-repeat: repeat;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.buttons .play {
+    width: 65px;
+}
+
+.buttons .play:hover {
+    box-shadow: 0 0 5px 2.5px #005eff;
+}
+
+.buttons .delete {
+    filter: hue-rotate(155deg) saturate(3);
+}
+
+.buttons .delete:hover {
+    box-shadow: 0 0 5px 2.5px #0044ff;
+}

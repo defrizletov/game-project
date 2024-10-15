@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Путешествие по Иркутску</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <style>
+        * {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            scrollbar-width: thin;
+            scrollbar-color: rgb(77, 101, 134) rgb(180, 200, 205);
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .backgroundImage {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: repeat;
+            z-index: -1;
+        }
+
+        #splash {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background-color: white;
+            transition: 5ms;
+        }
+
+        @font-face {
+            font-family: "Oswald";
+            src: url("./fonts/Oswald.ttf");
+        }
+
+        @font-face {
+            font-family: "Play";
+            src: url("./fonts/Play.ttf");
+        }
+
+        @font-face {
+            font-family: "PTSansCaption";
+            src: url("./fonts/PTSansCaption.ttf");
+        }
+
+        @font-face {
+            font-family: "Unbounded";
+            src: url("./fonts/Unbounded.ttf");
+        }
+
+        @font-face {
+            font-family: "Jost";
+            src: url("./fonts/Jost.ttf");
+        }
+
+        @font-face {
+            font-family: "Rubick";
+            src: url("./fonts/Rubick.ttf");
+        }
+        
+        @font-face {
+            font-family: "Neucha";
+            src: url("./fonts/Neucha.ttf");
+        }
+    </style>
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/menu.css" disabled>
+    <link rel="stylesheet" href="./css/game.css" disabled>
+    <link rel="stylesheet" href="./css/results.css" disabled>
+</head>
+<body style="background-color: black;">
+    <div class="backgroundImage" style="background: #ccc url('./img/backgroundWallpaper.jpg') center/250px;"></div>
+    <game>
+        <div data-tilt data-tilt-full-page-listening data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.35" class="box">
+            <span id="loadingText">ЗАГРУЗКА<br></span>
+            <img class="loadingCircle" src="./svg/snowflake.svg"></img>
+        </div>
+    </game>
+    <script src="./js/vanilla-tilt.min.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/results.js"></script>
+</body>
+</html>
